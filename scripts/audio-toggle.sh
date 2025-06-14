@@ -1,6 +1,6 @@
 #!/bin/bash
 
-STATE_FILE="/home/daarkblood/.config/scripts/state-cache/audio-output.state"
+STATE_FILE="/home/$USER/.config/scripts/state-cache/audio-output.state"
 
 HEADPHONES_KEY="alsa_output.usb-Focusrite_Scarlett_Solo_USB-00.pro-output-0"
 SPEAKERS_KEY="alsa_output.usb-Generic_USB_Audio-00.HiFi__Speaker__sink"
