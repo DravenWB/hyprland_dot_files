@@ -1,0 +1,38 @@
+{
+    "layer": "top",
+    "position": "top",
+    "spacing": "4",
+    "modules-left": ["custom/browser", "custom/screenshot"],
+    //"modules-center": [],
+    "modules-right": ["tray", "custom/audio-toggle", "clock"],
+
+    "clock": {
+        "format": "{:%A, %B %d, %Y | %I:%M%p}",
+        "timezone": "America/Denver",
+        "tooltip": "false",
+        "interval": 10
+    },
+
+    "custom/browser": {
+        "format": "🌐",
+        "tooltip": "Launch Browser",
+        "on-click": "librewolf",
+        "interval": 5
+    },
+
+    "custom/audio-toggle": {
+        "format": "{}",
+        "exec": "~/.config/scripts/audio-toggle.sh --status",
+        "tooltip": true,
+        "on-click": "~/.config/scripts/audio-toggle.sh",
+        "return-type": "json",
+        "interval": 1
+    },
+
+    "custom/screenshot": {
+        "exec": "echo ",  // Font Awesome camera icon
+        "on-click": "~/.config/scripts/screenshot.sh",
+        "tooltip": "Take Screenshot",
+        "interval": 9999
+    }
+}
