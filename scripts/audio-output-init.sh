@@ -1,6 +1,6 @@
 #!/bin/bash
 
-STATE_FILE="/home/daarkblood/.config/scripts/state-cache/audio-output.state"
+STATE_FILE="/home/$USER/.config/scripts/state-cache/audio-output.state"
 
 # Define sink keys
 HEADPHONES_KEY="alsa_output.usb-Focusrite_Scarlett_Solo_USB-00.pro-output-0"
